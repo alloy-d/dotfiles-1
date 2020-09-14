@@ -1,168 +1,112 @@
 #!/usr/bin/env bash
 
-# install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+apt-get update
 
-brew update
-#install cask
-brew tap caskroom/cask
+# install me packages -  the obscure ones are probably for asdf
+apt-get install adns
+apt-get install ansible
+apt-get install autoconf
+apt-get install automake
+apt-get install aws-elasticbeanstalk
+apt-get install awscli
+apt-get install bash-completion
+apt-get install circleci
+apt-get install cmake
+apt-get install cscope
+apt-get install digdag
+apt-get install direnv
+apt-get install exercism
+apt-get install fish
+apt-get install freetype
+apt-get install gdbm
+apt-get install gettext
+apt-get install gmp
+apt-get install gnu-sed
+apt-get install gnupg
+apt-get install gnutls
+apt-get install go
+apt-get install grip
+apt-get install heroku
+apt-get install heroku-node
+apt-get install htop
+apt-get install hub
+apt-get install icu4c
+apt-get install imagemagick
+apt-get install jemalloc
+apt-get install jpeg
+apt-get install jq
+apt-get install leiningen
+apt-get install libassuan
+apt-get install libev
+apt-get install libevent
+apt-get install libffi
+apt-get install libgcrypt
+apt-get install libgpg-error
+apt-get install libksba
+apt-get install libnet
+apt-get install libpng
+apt-get install libssh
+apt-get install libtasn1
+apt-get install libtermkey
+apt-get install libtiff
+apt-get install libtool
+apt-get install libunistring
+apt-get install libusb
+apt-get install libuv
+apt-get install libvterm
+apt-get install libxml2
+apt-get install libxslt
+apt-get install libyaml
+apt-get install libzip
+apt-get install lua
+apt-get install mas
+apt-get install msgpack
+apt-get install nettle
+apt-get install node
+apt-get install npth
+apt-get install oniguruma
+apt-get install openssl
+apt-get install openssl@1.1
+apt-get install p11-kit
+apt-get install parity
+apt-get install pcre
+apt-get install pcre2
+apt-get install peco
+apt-get install perform
+apt-get install perl
+apt-get install phantomjs
+apt-get install pinentry
+apt-get install pkg-config
+apt-get install postgresql
+apt-get install python
+apt-get install qt@5.5
+apt-get install readline
+apt-get install reattach-to-user-namespace
+apt-get install ripgrep
+apt-get install ruby
+apt-get install siege
+apt-get install spark
+apt-get install sqlite
+apt-get install tcptraceroute
+apt-get install telnet
+apt-get install tldr
+apt-get install tmate
+apt-get install tmux
+apt-get install tree
+apt-get install truncate
+apt-get install unibilium
+apt-get install universal-ctags
+apt-get install unixodbc
+apt-get install vim
+apt-get install watchman
+apt-get install wxmac
+apt-get install xz
 
-# install me brews -  the obscure ones are probably for asdf
-brew install adns
-brew install ansible
-brew install autoconf
-brew install automake
-brew install aws-elasticbeanstalk
-brew install awscli
-brew install bash-completion
-brew tap Goles/battery
-brew install battery
-brew install circleci
-brew install cmake
-brew install cscope
-brew install digdag
-brew install direnv
-brew install exercism
-brew install fish
-brew install freetype
-brew install gdbm
-brew install gettext
-brew install gmp
-brew install gnu-sed
-brew install gnupg
-brew install gnutls
-brew install go
-brew install grip
-brew tap heroku/brew
-brew install heroku
-brew install heroku-node
-brew install htop
-brew install hub
-brew install icu4c
-brew install imagemagick
-brew install jemalloc
-brew install jpeg
-brew install jq
-brew install leiningen
-brew install libassuan
-brew install libev
-brew install libevent
-brew install libffi
-brew install libgcrypt
-brew install libgpg-error
-brew install libksba
-brew install libnet
-brew install libpng
-brew install libssh
-brew install libtasn1
-brew install libtermkey
-brew install libtiff
-brew install libtool
-brew install libunistring
-brew install libusb
-brew install libuv
-brew install libvterm
-brew install libxml2
-brew install libxslt
-brew install libyaml
-brew install libzip
-brew install lua
-brew install mas
-brew install msgpack
-brew install nettle
-brew install node
-brew install npth
-brew install oniguruma
-brew install openssl
-brew install openssl@1.1
-brew install p11-kit
-brew install parity
-brew install pcre
-brew install pcre2
-brew install peco
-brew install perform
-brew install perl
-brew install phantomjs
-brew install pinentry
-brew install pkg-config
-brew install postgresql
-brew install python
-brew install qt@5.5
-brew tap thoughtbot/formulae
-brew install rcm
-brew install readline
-brew install reattach-to-user-namespace
-brew install ripgrep
-brew install ruby
-brew install siege
-brew install spark
-brew install sqlite
-brew install tcptraceroute
-brew install telnet
-brew tap shopify/shopify
-brew install themekit
-brew install tldr
-brew install tmate
-brew install tmux
-brew install tree
-brew install truncate
-brew install unibilium
-brew install universal-ctags
-brew install unixodbc
-brew install vim
-brew install watchman
-brew install wxmac
-brew install xz
-brew install yarn
-
-# install casks
-brew cask install 1password
-brew cask install abstract
-brew cask install adobe-reader
-brew cask install airtable
-brew cask install alacritty
-brew cask install brave
-brew cask install docker
-brew cask install emacs
-brew cask install firefox
-brew cask install flux
-brew cask install freedome
-brew cask install front
-brew cask install google-drive-file-stream
-brew cask install google-chrome
-brew cask install grammarly
-brew cask install graphiql
-brew cask install insomnia
-brew cask install intellij-idea-ce
-brew cask install iterm2
-brew cask install java
-brew cask install keycastr
-brew cask install kindle
-brew cask install licecap
-brew cask install macdown
-brew cask install postgres
-brew cask install sequel-pro
-brew cask install sketch
-brew cask install slack
-brew cask install spotify
-brew cask install sqlpro-studio
-brew cask install stretchly
-brew cask install sublime
-brew cask install sublime-text
-brew cask install terraform
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install whatsapp
-brew cask install zeplin
-
-# install ctags after emacs
-brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-brew link --overwrite universal-ctags
 
 #install asdf for package management
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.3.0
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
+
+mkdir -p $HOME/.config/fish/completions && cp $HOME/.asdf/completions/asdf.fish $HOME/config/fish/completions
 
 # install ruby
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
